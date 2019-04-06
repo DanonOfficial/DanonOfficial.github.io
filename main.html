@@ -2,17 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mars Diging Company</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <title></title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
+    <link href="css/styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 </head>
 <body>
-<div class = "card-panel teal lighten-2"><h3>Hello World!</h3></div>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<section class="jumbotron jumbotron-fluid" id="welcome">
+    <div class="container text-center">
+        <h1 id="main-welcome">We Need You For The Next Big Leap Of Humanity</h1>
+    </div>
+</section>
+
+<section class="primary" id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-white mt-0" id="about-title">MISSION TO MARS</h2>
+                <hr class="divider light my-6">
+                <p class=" mb-6" id="about-text">Our aspirational goal is to send our first cargo mission to Mars in
+                    2022.
+                    The objectives for the first mission will be to confirm water resources, identify hazards, and put
+                    in place initial power, mining, and life support infrastructure. A second mission, with both cargo
+                    and crew, is targeted for 2024, with primary objectives of building a propellant depot and preparing
+                    for future crew flights. The ships from these initial missions will also serve as the beginnings of
+                    the first Mars base, from which we can build a thriving city and eventually a self-sustaining
+                    civilization on Mars.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section" id="services">
+    <div class="container">
+        <h2 class="text-center mt-0" id="main-service">Find Your Future</h2>
+        <h3 class="text-center mt-1 ">From engineering to manufacturing to operations, we are looking for world-class
+            talent ready to tackle challenging projects that will ultimately enable life on other planets. </h3>
+        <hr class="divider my-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="engineering">
+                    <img src="img/engineering-icon.png">
+                </div>
+                <div class="mt-5" id="service-engineering">
+                    <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                    <h3 class="h4 mb-2 text-uppercase">Engineering</h3>
+                    <p class="text-muted mb-0">Design and code the world’s most advanced rockets and spacecraft taking
+                        humanity to Earth orbit, the Moon, Mars, and beyond.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="manufacturing">
+                    <img src="img/manufacturing-icon.png">
+                </div>
+                <div class="mt-5" id="service-manufacturing">
+                    <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+                    <h3 class="h4 mb-2 text-uppercase">Manufacturing</h3>
+                    <p class="text-muted mb-0">Make multiplanetary space travel a reality by building advanced space
+                        vehicles at unmatched production rates and vastly reduced costs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="operations">
+                    <img height="104px" src="img/operations-icon.png" width="104px">
+                </div>
+                <div class="mt-5" id="service-operations">
+                    <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                    <h3 class="h4 mb-2 text-uppercase">Operations</h3>
+                    <p class="text-muted mb-0">Advance critical business relationships externally and keep our internal
+                        operations and information systems moving forward.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section primary" id="second-about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-white mt-0" id="second-about-title">We Are Lukrum</h2>
+                <hr class="divider light my-6">
+                <p class=" mb-6" id="second-about-text">Lukrum is like Special Forces… we do the missions that others
+                    think
+                    are impossible. We have goals that are absurdly ambitious by any reasonable standard, but we’re
+                    going to make them happen. We have the potential here at SpaceX to have an incredible effect on the
+                    future of humanity and life itself. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center text-uppercase mb-0">Tell us about yourself</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Name</label>
+                            <input class="form-control" data-validation-required-message="Please enter your name."
+                                   id="name" placeholder="Name" required="required"
+                                   type="text">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Email Address</label>
+                            <input class="form-control"
+                                   data-validation-required-message="Please enter your email address." id="email"
+                                   placeholder="Email Address"
+                                   required="required"
+                                   type="email">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>Phone Number</label>
+                            <input class="form-control"
+                                   data-validation-required-message="Please enter your phone number." id="phone"
+                                   placeholder="Phone Number"
+                                   required="required"
+                                   type="tel">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label>CV</label>
+                            <textarea class="form-control" data-validation-required-message="Please enter a message."
+                                      id="CV" placeholder="CV"
+                                      required="required"
+                                      rows="5"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="form-group  text-center">
+                        <button class="btn btn-primary btn-xl " id="sendMessageButton" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
