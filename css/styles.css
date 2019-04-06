@@ -1,0 +1,135 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+section.jumbotron {
+    background-image: url(../img/red_planet_bg.jpg);
+    /* Set a specific height */
+    height: 900px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 0;
+
+
+}
+
+section.jumbotron .container {
+    padding: 300px 0;
+}
+
+section.jumbotron:before {
+    content: "";
+    position: absolute;
+    opacity: .0;
+    background: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#main-welcome {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 60px;
+
+}
+
+.btn-a {
+    background-color: #ac716e;
+    font-weight: bold;
+}
+
+section {
+    padding: 150px 0;
+    color: #2B3335;
+}
+
+.section-services {
+    background: #EBEDEC;
+}
+
+
+#services {
+    background-image: url(../img/services.jpg);
+    /* Set a specific height */
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 0;
+}
+
+#service-engineering {
+    color: white;
+}
+
+#service-manufacturing {
+    color: white;
+}
+
+#service-operations {
+    color: white;
+}
+
+#main-service {
+    color: white;
+}
+
+#about {
+    background-color: #0f0f0f;
+}
+
+#about-title {
+    font-size: 50px;
+}
+
+#about-text {
+    font-size: 20px;
+    color: white;
+}
+
+#second-about {
+    background-color: #0f0f0f;
+}
+
+#second-about-title {
+    font-size: 50px;
+}
+
+#second-about-text {
+    font-size: 20px;
+    color: white;
+}
+
+#contact {
+    background-image: url(../img/cv.jpg);
+    /* Set a specific height */
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 0;
+}
+
+#sendMessageButton {
+    position: center;
+    background-color: #ac716e;
+    font-weight: bold;
+}
